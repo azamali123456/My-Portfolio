@@ -116,9 +116,9 @@ h1:before {
   }
 }
 .topDivText {
-  margin-left: 175px;
   font-size: 20px;
-  inline-size: 500px;
+  inline-size: 158px;
+  margin-left: 102px;
   overflow-wrap: break-word;
 }
 .socialMedia {
@@ -440,7 +440,8 @@ h1:before {
   top: -46px;
 }
 /* ALL Media Qury is here */
-@media only screen and (max-width: 320px) {
+
+@media only screen and (min-width: 220px) and (max-width: 320px) {
   .footerImage {
     position: relative;
     left: 0px;
@@ -522,8 +523,8 @@ h1:before {
     display: none;
   }
   .animatedText .staticText {
-    font-size: 130%;
-    padding-left: 34px;
+    font-size: 121%;
+    padding-left: 55px;
   }
   .animatedText .h1 {
     font-size: 90%;
@@ -570,7 +571,7 @@ h1:before {
   .topDivText {
     margin-left: 32px;
     font-size: 17px;
-    inline-size: 227px;
+    inline-size: 100px;
     overflow-wrap: break-word;
   }
   .animatedText .image {
@@ -591,7 +592,158 @@ h1:before {
     top: -45px;
   }
 }
-@media only screen and (min-width: 375px) and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .footerImage {
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+  .contactInput {
+    width: 292px;
+    height: 50px;
+    border: none;
+  }
+  .submitButton {
+    width: 78px;
+    height: 41px;
+    background-color: #4070f4;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: 200ms;
+    position: relative;
+    left: 115px;
+  }
+  .timeLine {
+    margin: 50px auto;
+  }
+  .timeLine::after {
+    left: 15px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+    font-size: 15px;
+  }
+  .textBox p {
+    font-size: 15px;
+  }
+  .container img {
+    position: absolute;
+    width: 40px;
+    height: 37px;
+    border-radius: 50%;
+    right: 112px;
+    top: 32px;
+    z-index: 10;
+    border: 4px solid #4070f4;
+  }
+  .rightContainer {
+    left: 0%;
+  }
+  .rightContainer img {
+    left: -5px;
+    z-index: 10 !important;
+  }
+  .leftContainerArrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    left: -14px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: 0px;
+    transform: rotate(-180deg);
+  }
+  .textBox {
+    font-size: 13px;
+    width: 250px;
+  }
+  .textBox small {
+    margin-bottom: 10px;
+  }
+  .bottomToTop {
+    margin-left: -23px;
+  }
+  .aboutMeIconDiv {
+    display: none;
+  }
+  .animatedText .staticText {
+    font-size: 121%;
+    padding-left: 55px;
+  }
+  .animatedText .h1 {
+    font-size: 90%;
+  }
+  h1:before {
+    font-size: 15%;
+    animation-name: head;
+    color: #4070f4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    padding-left: 18px;
+    content: "";
+  }
+  @keyframes head {
+    0% {
+      font-size: 20px;
+      opacity: 1;
+      content: "React.js , Native";
+
+      overflow-wrap: break-word;
+    }
+    25% {
+      font-size: 20px;
+      opacity: 0;
+    }
+    50% {
+      font-size: 20px;
+      opacity: 1;
+      content: "Next.js";
+    }
+    75% {
+      font-size: 20px;
+      opacity: 0;
+    }
+    100% {
+      font-size: 20px;
+      opacity: 1;
+      content: "Express , Nest ";
+    }
+  }
+  .topDivText {
+    margin-left: 32px;
+    font-size: 17px;
+    inline-size: 100px;
+    overflow-wrap: break-word;
+  }
+  .animatedText .image {
+    width: 74%;
+    height: 88%;
+    border: 0px solid #4070f4;
+    box-shadow: 0px 5px 10px 0px #4070f4;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: url("./me.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 30px;
+    top: -45px;
+  }
+}
+@media only screen and (min-width: 374px) and (max-width: 425px) {
   .footerImage {
     position: relative;
     left: 10px;
