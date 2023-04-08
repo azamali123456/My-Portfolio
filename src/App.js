@@ -10,6 +10,9 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [modelData, setmodelData] = useState({});
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [user, setUser] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const showModal = (item) => {
     setIsModalOpen(true);
     setmodelData(item);
@@ -117,14 +120,12 @@ function App() {
       behavior: "smooth",
     });
   };
-
   const openNotification = (topVal) => {
     var element = document.createElement("a");
     var file = new Blob(["./azam.pdf"], { type: "image/*" });
     element.href = URL.createObjectURL(file);
     element.download = "./azam.pdf";
     element.click();
-
     api.open({
       message: "Resume has been download!",
       style: {
@@ -149,21 +150,63 @@ function App() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_es7gy41",
-        "template_4j28ysi",
-        form.current,
-        "UrR8OS3JjUBMKVWNf"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
+    if (user && email && message) {
+      emailjs
+        .sendForm(
+          "service_es7gy41",
+          "template_4j28ysi",
+          form.current,
+          "UrR8OS3JjUBMKVWNf"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            const val = "top";
+            api.open({
+              message: "Email has been send to Mr.Azam Ali",
+              style: {
+                width: 300,
+              },
+              icon: (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-check"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                </svg>
+              ),
+              val,
+            });
+            form.reset();
+          },
+          (error) => {}
+        );
+    } else {
+      const val = "top";
+      api.open({
+        message: "Please fill all fields!",
+        style: {
+          width: 300,
         },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-exclamation-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+          </svg>
+        ),
+        val,
+      });
+    }
   };
   return (
     <div
@@ -754,17 +797,20 @@ function App() {
               className={`${styles.contactInput} rounded m-2`}
               name="user_name"
               placeholder="Your Name"
+              onChange={(e) => setUser(e.target.value)}
             />
             <input
               type="email"
               className={`${styles.contactInput} rounded m-2`}
               placeholder="Your Email"
               name="user_email"
+              onChange={(e) => setEmail(e.target.value)}
             />
             <textarea
               className={`${styles.contactInput} rounded m-2`}
               placeholder="Query You Have"
               name="message"
+              onChange={(e) => setMessage(e.target.value)}
             />
 
             <input
