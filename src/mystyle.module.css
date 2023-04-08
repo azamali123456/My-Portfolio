@@ -1,0 +1,1135 @@
+.navbarText {
+  font-size: 30px;
+  position: relative;
+  left: 12%;
+}
+.topTextDiv {
+  position: relative;
+  top: 70px;
+}
+.animatedText {
+  display: flex;
+  margin-top: 10px;
+}
+.navbarButton {
+  width: 78px;
+  height: 35px;
+  background-color: #4070f4;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  transition: 200ms;
+}
+.submitButton {
+  width: 78px;
+  height: 41px;
+  background-color: #4070f4;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  transition: 200ms;
+  position: relative;
+  left: 314px;
+}
+.navbarButton:hover {
+  width: 78px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid white;
+}
+.submitButton:hover {
+  width: 78px;
+  height: 41px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+.name {
+  font-size: 25px;
+  background-color: #4070f4;
+  position: relative;
+  top: 65%;
+  padding: 20px;
+  color: white;
+  border: 0px solid #4070f4;
+  box-shadow: 0px 5px 10px 0px #4070f4;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  text-align: center;
+}
+.animatedText .staticText {
+  font-size: 130%;
+  padding-left: 180px;
+}
+h1:before {
+  font-size: 20%;
+  animation-name: head;
+  color: #4070f4;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  content: "";
+  padding-left: 170px;
+}
+@keyframes head {
+  0% {
+    font-size: 40px;
+    opacity: 1;
+    content: "React.js , Native";
+    inline-size: 248px;
+    overflow-wrap: break-word;
+    padding-left: 165px;
+  }
+  25% {
+    font-size: 40px;
+    opacity: 0;
+    padding-left: 165px;
+  }
+  50% {
+    font-size: 40px;
+    opacity: 1;
+    content: "Next.js";
+    padding-left: 165px;
+  }
+  75% {
+    font-size: 40px;
+    opacity: 0;
+    padding-left: 165px;
+  }
+  100% {
+    font-size: 40px;
+    opacity: 1;
+    content: "Express , Nest ";
+    padding-left: 165px;
+  }
+}
+.topDivText {
+  margin-left: 175px;
+  font-size: 20px;
+  inline-size: 500px;
+  overflow-wrap: break-word;
+}
+.socialMedia {
+  margin-left: 166px;
+}
+.haeadImge {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.animatedText .image {
+  width: 60%;
+  height: 110%;
+  border: 0px solid #4070f4;
+  box-shadow: 0px 5px 10px 0px #4070f4;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background-image: url("./me.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 30px;
+}
+.moveUpDown1 {
+  background-color: #4070f4;
+  box-shadow: 0px 5px 10px 0px #4070f4;
+  border: 1px solid #4070f4;
+  border-radius: 100px;
+  margin: 10px;
+  animation-name: moveUpDown;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-delay: 3s;
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+@keyframes moveUpDown {
+  0% {
+    opacity: 1;
+    position: relative;
+    top: -20px;
+  }
+  25% {
+    opacity: 0.8;
+    position: relative;
+    top: -40px;
+  }
+  50% {
+    opacity: 0.6;
+    position: relative;
+    top: -80px;
+  }
+  75% {
+    opacity: 0.4;
+    position: relative;
+    top: -100px;
+  }
+  100% {
+    opacity: 0.2;
+    position: relative;
+    top: -120px;
+  }
+}
+.moveUpDown2 {
+  background-color: #4070f4;
+  box-shadow: 0px 5px 10px 0px #4070f4;
+  border: 1px solid #4070f4;
+  border-radius: 100px;
+  margin: 10px;
+  animation-name: moveUpDown2;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-delay: 3s;
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+@keyframes moveUpDown2 {
+  0% {
+    opacity: 1;
+    position: relative;
+    top: -20px;
+  }
+  25% {
+    opacity: 0.8;
+    position: relative;
+    top: -40px;
+  }
+  50% {
+    opacity: 0.6;
+    position: relative;
+    top: -80px;
+  }
+  75% {
+    opacity: 0.4;
+    position: relative;
+    top: -100px;
+  }
+  100% {
+    opacity: 0.2;
+    position: relative;
+    top: -120px;
+  }
+}
+/* About Me */
+.aboutMeHead {
+  margin-top: 88px;
+  padding: 30px;
+  font-size: 25px;
+  background: linear-gradient(to left, #4070f4, rgba(255, 122, 89, 0));
+  border: 0px solid #4070f4;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  color: black;
+}
+.aboutMeIconDiv {
+  color: white;
+}
+/* Services */
+.servicestext {
+  margin-top: 30px;
+  padding: 30px;
+  font-size: 25px;
+}
+.card {
+  background-color: #4070f4;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -1px, 0px);
+}
+.cardAfter {
+  background-color: #4070f4;
+  color: white;
+  transition: 200ms;
+}
+.cardAfter:hover {
+  box-shadow: rgba(255, 253, 253, 0.22) 0px 19px 43px;
+  transform: translate3d(0px, -1px, 0px);
+  transition: 200ms;
+}
+.vertical-timeline.vertical-timeline-custom-line::before {
+  background: #424242 !important;
+}
+/* Timeline */
+.timeLine {
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+.timeLine .container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  animation: movedown 1s linear forwards;
+  z-index: 12;
+}
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.container:nth-child(2) {
+  animation-delay: 1s;
+}
+.container:nth-child(3) {
+  animation-delay: 2s;
+}
+.container:nth-child(4) {
+  animation-delay: 3s;
+}
+.timeLine .container .textBox {
+  padding: 20px 30px;
+  background: linear-gradient(to right, #4070f4, rgba(239, 242, 244, 1.893));
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.textBoxAfter {
+  padding: 20px 30px;
+  background-color: rgb(99, 99, 99);
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+  color: white;
+}
+.leftContainer {
+  left: 0;
+}
+.rightContainer {
+  left: 50%;
+}
+.container img {
+  position: absolute;
+  width: 40px;
+  height: 37px;
+  border-radius: 50%;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+  box-shadow: 0px 1px 1px 1px #4070f4;
+  animation: shadowffect 2s infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-duration: 1s;
+}
+.contactInput {
+  width: 400px;
+  height: 50px;
+  border: none;
+}
+@keyframes shadowffect {
+  0% {
+    box-shadow: 0px 1px 1px 1px #4070f4;
+  }
+  100% {
+    box-shadow: 0px 1px 3px 4px #4070f4;
+  }
+}
+.rightContainer img {
+  left: -20px;
+  z-index: 10 !important;
+}
+.timeLine::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: black;
+  box-shadow: white 0px 19px 43px;
+  top: 35px;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 1;
+  animation: moveline 6s linear forwards;
+}
+@keyframes moveline {
+  0% {
+    height: 0;
+    z-index: 1;
+  }
+  100% {
+    height: 100%;
+    z-index: 1;
+  }
+}
+.textBox h2 {
+  font-weight: 600;
+}
+.textBox small {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.leftContainerArrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  left: 500px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid white;
+  right: 15px;
+}
+.leftContainerArrowAfter {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  left: 500px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid rgb(99, 99, 99);
+  right: 15px;
+}
+.rightContainerArrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  left: -14px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #4070f4;
+}
+.rightContainerArrowAfter {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  left: -14px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid rgb(99, 99, 99);
+}
+.footerImage {
+  position: relative;
+  left: 102px;
+  top: -46px;
+}
+/* ALL Media Qury is here */
+@media only screen and (max-width: 320px) {
+  .footerImage {
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+  .contactInput {
+    width: 292px;
+    height: 50px;
+    border: none;
+  }
+  .submitButton {
+    width: 78px;
+    height: 41px;
+    background-color: #4070f4;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: 200ms;
+    position: relative;
+    left: 115px;
+  }
+  .timeLine {
+    margin: 50px auto;
+  }
+  .timeLine::after {
+    left: 15px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+    font-size: 15px;
+  }
+  .textBox p {
+    font-size: 15px;
+  }
+  .container img {
+    position: absolute;
+    width: 40px;
+    height: 37px;
+    border-radius: 50%;
+    right: 112px;
+    top: 32px;
+    z-index: 10;
+    border: 4px solid #4070f4;
+  }
+  .rightContainer {
+    left: 0%;
+  }
+  .rightContainer img {
+    left: -5px;
+    z-index: 10 !important;
+  }
+  .leftContainerArrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    left: -14px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: 0px;
+    transform: rotate(-180deg);
+  }
+  .textBox {
+    font-size: 13px;
+    width: 250px;
+  }
+  .textBox small {
+    margin-bottom: 10px;
+  }
+  .bottomToTop {
+    margin-left: -23px;
+  }
+  .aboutMeIconDiv {
+    display: none;
+  }
+  .animatedText .staticText {
+    font-size: 130%;
+    padding-left: 34px;
+  }
+  .animatedText .h1 {
+    font-size: 90%;
+  }
+  h1:before {
+    font-size: 15%;
+    animation-name: head;
+    color: #4070f4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    padding-left: 18px;
+    content: "";
+  }
+  @keyframes head {
+    0% {
+      font-size: 20px;
+      opacity: 1;
+      content: "React.js , Native";
+
+      overflow-wrap: break-word;
+    }
+    25% {
+      font-size: 20px;
+      opacity: 0;
+    }
+    50% {
+      font-size: 20px;
+      opacity: 1;
+      content: "Next.js";
+    }
+    75% {
+      font-size: 20px;
+      opacity: 0;
+    }
+    100% {
+      font-size: 20px;
+      opacity: 1;
+      content: "Express , Nest ";
+    }
+  }
+  .topDivText {
+    margin-left: 32px;
+    font-size: 17px;
+    inline-size: 227px;
+    overflow-wrap: break-word;
+  }
+  .animatedText .image {
+    width: 74%;
+    height: 88%;
+    border: 0px solid #4070f4;
+    box-shadow: 0px 5px 10px 0px #4070f4;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: url("./me.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 30px;
+    top: -45px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .footerImage {
+    position: relative;
+    left: 10px;
+    top: 0px;
+  }
+  .contactInput {
+    width: 292px;
+    height: 50px;
+    border: none;
+  }
+  .submitButton {
+    width: 78px;
+    height: 41px;
+    background-color: #4070f4;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: 200ms;
+    position: relative;
+    left: 144px;
+  }
+  .timeLine {
+    left: 11px;
+    margin: 50px auto;
+  }
+  .timeLine::after {
+    left: 15px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+    font-size: 15px;
+  }
+  .textBox p {
+    font-size: 15px;
+  }
+  .container img {
+    position: absolute;
+    width: 40px;
+    height: 37px;
+    border-radius: 50%;
+    right: 142px;
+    top: 32px;
+    z-index: 10;
+    border: 4px solid #4070f4;
+  }
+  .rightContainer {
+    left: 0%;
+  }
+  .rightContainer img {
+    left: -5px;
+    z-index: 10 !important;
+  }
+  .leftContainerArrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    left: -14px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: 0px;
+    transform: rotate(-180deg);
+  }
+  .textBox {
+    font-size: 13px;
+    width: 250px;
+    left: 5px;
+  }
+  .textBox small {
+    margin-bottom: 10px;
+  }
+  .card {
+    background-color: #4070f4;
+    position: relative;
+    left: 10px;
+  }
+  .cardAfter {
+    background-color: #4070f4;
+    color: white;
+    transition: 200ms;
+    position: relative;
+    left: 18px;
+  }
+  .bottomToTop {
+    margin-left: -23px;
+  }
+  .socialMedia {
+    margin-left: 20px !important;
+  }
+  .animatedText .staticText {
+    font-size: 130%;
+    padding-left: 34px;
+  }
+  .aboutMeIconDiv {
+    display: none;
+  }
+  .animatedText .h1 {
+    font-size: 90%;
+    padding-left: 0px;
+  }
+  .topDivText {
+    margin-left: 32px;
+    font-size: 17px;
+    inline-size: 227px;
+    overflow-wrap: break-word;
+  }
+  .animatedText .image {
+    width: 74%;
+    height: 90%;
+    border: 0px solid #4070f4;
+    box-shadow: 0px 5px 10px 0px #4070f4;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: url("./me.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 30px;
+    top: -45px;
+  }
+  h1:before {
+    font-size: 15%;
+    animation-name: head;
+    color: #4070f4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    padding-left: 20px;
+    content: "";
+  }
+  @keyframes head {
+    0% {
+      font-size: 20px;
+      opacity: 1;
+      content: "React.js , Native";
+      overflow-wrap: break-word;
+      padding-left: 20px;
+    }
+    25% {
+      padding-left: 20px;
+      font-size: 20px;
+      opacity: 0;
+    }
+    50% {
+      padding-left: 20px;
+      font-size: 20px;
+      opacity: 1;
+      content: "Next.js";
+    }
+    75% {
+      padding-left: 20px;
+      font-size: 20px;
+      opacity: 0;
+    }
+    100% {
+      padding-left: 20px;
+      font-size: 20px;
+      opacity: 1;
+      content: "Express , Nest ";
+    }
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .footerImage {
+    position: relative;
+    left: 47px;
+    top: -49px;
+  }
+  .submitButton {
+    width: 78px;
+    height: 41px;
+    background-color: #4070f4;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: 200ms;
+    position: relative;
+    left: 168px;
+  }
+  .timeLine {
+    left: 11px;
+    margin: 50px auto;
+  }
+  .timeLine::after {
+    left: 15px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+    font-size: 15px;
+  }
+  .textBox p {
+    font-size: 15px;
+  }
+  .container img {
+    position: absolute;
+    width: 40px;
+    height: 37px;
+    border-radius: 50%;
+    right: 167px;
+    top: 32px;
+    z-index: 10;
+    border: 4px solid #4070f4;
+  }
+  .rightContainer {
+    left: 0%;
+  }
+  .rightContainer img {
+    left: -5px;
+    z-index: 10 !important;
+  }
+  .leftContainerArrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    left: -14px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: 0px;
+    transform: rotate(-180deg);
+  }
+  .textBox {
+    font-size: 13px;
+    width: 250px;
+  }
+  .textBox small {
+    margin-bottom: 10px;
+  }
+  .card {
+    background-color: #4070f4;
+    position: relative;
+    left: 50px;
+  }
+  .cardAfter {
+    background-color: #4070f4;
+    color: white;
+    transition: 200ms;
+    position: relative;
+    left: 50px;
+  }
+  .bottomToTop {
+    margin-left: -23px;
+  }
+  .socialMedia {
+    margin-left: 20px !important;
+  }
+  .animatedText .staticText {
+    font-size: 130%;
+    padding-left: 34px;
+  }
+  .aboutMeIconDiv {
+    margin-top: 95px;
+  }
+  .topTextDiv {
+    position: relative;
+    left: 0%;
+    top: 70px;
+  }
+  .animatedText .image {
+    width: 74%;
+    height: 90%;
+    border: 0px solid #4070f4;
+    box-shadow: 0px 5px 10px 0px #4070f4;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: url("./me.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 30px;
+    top: -45px;
+  }
+  h1:before {
+    font-size: 15%;
+    animation-name: head;
+    color: #4070f4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    padding-left: 18px;
+    content: "";
+  }
+  @keyframes head {
+    0% {
+      font-size: 20px;
+      opacity: 1;
+      content: "React.js , Native";
+
+      overflow-wrap: break-word;
+    }
+    25% {
+      font-size: 20px;
+      opacity: 0;
+    }
+    50% {
+      font-size: 20px;
+      opacity: 1;
+      content: "Next.js";
+    }
+    75% {
+      font-size: 20px;
+      opacity: 0;
+    }
+    100% {
+      font-size: 20px;
+      opacity: 1;
+      content: "Express , Nest ";
+    }
+  }
+
+  .topDivText {
+    margin-left: 32px;
+    font-size: 17px;
+    inline-size: 227px;
+    overflow-wrap: break-word;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .footerImage {
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+  .submitButton {
+    width: 78px;
+    height: 41px;
+    background-color: #4070f4;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: 200ms;
+    position: relative;
+    left: 168px;
+  }
+  .leftContainerArrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    left: 272px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: 0px;
+  }
+  .card {
+    background-color: #4070f4;
+    position: relative;
+    left: 80px;
+  }
+  .cardAfter {
+    background-color: #4070f4;
+    color: white;
+    transition: 200ms;
+    position: relative;
+    left: 80px;
+  }
+  .socialMedia {
+    margin-left: 20px !important;
+  }
+  .animatedText .staticText {
+    font-size: 130%;
+    padding-left: 34px;
+  }
+  .aboutMeIconDiv {
+    margin-top: 95px;
+  }
+  .topTextDiv {
+    position: relative;
+    left: 4%;
+    top: 70px;
+  }
+  .animatedText .image {
+    width: 74%;
+    height: 92%;
+    border: 0px solid #4070f4;
+    box-shadow: 0px 5px 10px 0px #4070f4;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: url("./me.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 30px;
+    top: -181px;
+  }
+  h1:before {
+    font-size: 15%;
+    animation-name: head;
+    color: #4070f4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    padding-left: 18px;
+    content: "";
+  }
+  @keyframes head {
+    0% {
+      font-size: 20px;
+      opacity: 1;
+      content: "React.js , Native";
+
+      overflow-wrap: break-word;
+    }
+    25% {
+      font-size: 20px;
+      opacity: 0;
+    }
+    50% {
+      font-size: 20px;
+      opacity: 1;
+      content: "Next.js";
+    }
+    75% {
+      font-size: 20px;
+      opacity: 0;
+    }
+    100% {
+      font-size: 20px;
+      opacity: 1;
+      content: "Express , Nest ";
+    }
+  }
+  .topDivText {
+    margin-left: 32px;
+    font-size: 17px;
+    inline-size: 227px;
+    overflow-wrap: break-word;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .footerImage {
+    position: relative;
+    left: 0px;
+    top: -47px;
+  }
+  .submitButton {
+    width: 78px;
+    height: 41px;
+    background-color: #4070f4;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: 200ms;
+    position: relative;
+    left: 205px;
+  }
+  .animatedText .image {
+    width: 74%;
+    height: 92%;
+    border: 0px solid #4070f4;
+    box-shadow: 0px 5px 10px 0px #4070f4;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: url("./me.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 30px;
+    top: -181px;
+  }
+  .leftContainerArrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    left: 400px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: 0px;
+  }
+  .animatedText .image {
+    width: 83%;
+    height: 99%;
+    border: 0px solid #4070f4;
+    box-shadow: 0px 5px 10px 0px #4070f4;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: url("./me.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 30px;
+    top: -96px;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1660px) {
+  .animatedText .image {
+    width: 63%;
+    height: 114%;
+    border: 0px solid #4070f4;
+    box-shadow: 0px 5px 10px 0px #4070f4;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: url("./me.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 30px;
+    top: -90px;
+  }
+}
