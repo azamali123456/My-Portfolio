@@ -592,10 +592,10 @@ h1:before {
     top: -45px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 374px) {
+@media only screen and (min-width: 320px) and (max-width: 375px) {
   .footerImage {
     position: relative;
-    left: 0px;
+    left: 22px;
     top: 0px;
   }
   .contactInput {
@@ -635,7 +635,7 @@ h1:before {
     width: 40px;
     height: 37px;
     border-radius: 50%;
-    right: 112px;
+    right: 140px;
     top: 32px;
     z-index: 10;
     border: 4px solid #4070f4;
@@ -675,7 +675,7 @@ h1:before {
   }
   .animatedText .staticText {
     font-size: 121%;
-    padding-left: 55px;
+    padding-left: 34px;
   }
   .animatedText .h1 {
     font-size: 90%;
@@ -722,7 +722,7 @@ h1:before {
   .topDivText {
     margin-left: 32px;
     font-size: 17px;
-    inline-size: 100px;
+    inline-size: 200px;
     overflow-wrap: break-word;
   }
   .animatedText .image {
@@ -743,7 +743,7 @@ h1:before {
     top: -45px;
   }
 }
-@media only screen and (min-width: 374px) and (max-width: 425px) {
+@media only screen and (min-width: 375px) and (max-width: 425px) {
   .footerImage {
     position: relative;
     left: 10px;
@@ -787,7 +787,7 @@ h1:before {
     width: 40px;
     height: 37px;
     border-radius: 50%;
-    right: 142px;
+    right: 151px;
     top: 32px;
     z-index: 10;
     border: 4px solid #4070f4;
@@ -1269,7 +1269,7 @@ h1:before {
 @media only screen and (min-width: 1440px) and (max-width: 1660px) {
   .animatedText .image {
     width: 63%;
-    height: 114%;
+    height: 100%;
     border: 0px solid #4070f4;
     box-shadow: 0px 5px 10px 0px #4070f4;
     border-top-right-radius: 100px;
