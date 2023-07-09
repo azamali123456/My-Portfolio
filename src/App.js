@@ -632,7 +632,7 @@ function App() {
                         : ` m-3 mb-5 row rounded ${styles.card}`
                     }
                     style={{
-                      width: "18rem",
+                      width: "20rem",
                       display: "flex",
                       flexWrap: "wrap",
                       justifyContent: "space-around",
@@ -902,7 +902,7 @@ function App() {
             </span>
           </div>
           <ScrollAnimation animateIn="fadeIn" delay="7">
-            <div className="row ">
+            <div className="row m-1 ">
               <div className="col-sm-2"></div>
               <div
                 className="col-sm-6 row bg-rounded m-2 rounded shadow"
@@ -967,7 +967,7 @@ function App() {
             </div>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn">
-            <div className="row ">
+            <div className="row m-1">
               <div className="col-sm-3"></div>
               <div
                 className="col-sm-6 row bg-rounded m-2 rounded shadow"
@@ -1053,11 +1053,11 @@ function App() {
             }
           >
             <strong
-              className="mb-5 p-2 text-white text-uppercase"
+              className="mb-5 p-2 text-white text-uppercase text-center"
               style={{
                 position: "relative",
                 top: "-50px",
-                left: "-20px",
+                // left: "-17px",
                 border: "3px solid #3FFF00",
                 borderRadius: "2px",
               }}
@@ -1068,7 +1068,7 @@ function App() {
           <div className="col-sm-4 d-flex">
             <div
               class="mapouter"
-              style={{ position: "relative", left: "40px" }}
+              style={{ position: "relative", left: "20px" }}
             >
               <div class="gmap_canvas">
                 <iframe

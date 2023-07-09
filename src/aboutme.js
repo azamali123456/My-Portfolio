@@ -9,7 +9,7 @@ function Aboutme({ darkMode }) {
     >
       <div className="row mt-5  ">
         <div className="col-sm-2"></div>
-        <div className=" col-sm-8 mt-5 d-flex  p-5">
+        <div className=" col-sm-8 mt-5 d-flex  p-3">
           <h5 className={`  ${styles.aboutMeHead}`}>
             <span
               className={darkMode ? `text-white mt-5  ` : `text-dark mt-5  `}
