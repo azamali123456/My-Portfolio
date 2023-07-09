@@ -116,9 +116,9 @@ h1:before {
   }
 }
 .topDivText {
-  font-size: 20px;
-  inline-size: 158px;
-  margin-left: 102px;
+  font-size: 18px;
+  inline-size: 400px;
+  margin-left: 170px;
   overflow-wrap: break-word;
 }
 .socialMedia {
@@ -283,6 +283,7 @@ h1:before {
   padding: 10px 50px;
   position: relative;
   width: 50%;
+
   animation: movedown 1s linear forwards;
   z-index: 12;
 }
@@ -334,7 +335,8 @@ h1:before {
   right: -20px;
   top: 32px;
   z-index: 10;
-  box-shadow: 0px 1px 1px 1px #4070f4;
+  border: 2px solid black;
+  box-shadow: 10px 10px 1px 1px #4070f4;
   animation: shadowffect 2s infinite;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
@@ -348,7 +350,7 @@ h1:before {
 }
 @keyframes shadowffect {
   0% {
-    box-shadow: 0px 1px 1px 1px #4070f4;
+    box-shadow: 0px 0px 1px 1px #4070f4;
   }
   100% {
     box-shadow: 0px 1px 3px 4px #4070f4;
@@ -363,13 +365,14 @@ h1:before {
   position: absolute;
   width: 6px;
   height: 100%;
-  background: black;
+  background: #3fff00;
   box-shadow: white 0px 19px 43px;
-  top: 35px;
+  top: 33px;
   left: 50%;
   margin-left: -3px;
   z-index: 1;
   animation: moveline 6s linear forwards;
+  border-radius: 10px;
 }
 @keyframes moveline {
   0% {
@@ -436,7 +439,7 @@ h1:before {
 }
 .footerImage {
   position: relative;
-  left: 102px;
+  left: 117px;
   top: -46px;
 }
 /* ALL Media Qury is here */
@@ -1241,8 +1244,10 @@ h1:before {
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .footerImage {
     position: relative;
-    left: 0px;
+    left: 100px;
     top: -47px;
+    border: 10px solid transparent;
+    border-top-left-radius: 1px red;
   }
   .submitButton {
     width: 78px;
@@ -1257,7 +1262,7 @@ h1:before {
     left: 205px;
   }
   .animatedText .image {
-    width: 74%;
+    width: 70%;
     height: 92%;
     border: 0px solid #4070f4;
     box-shadow: 0px 5px 10px 0px #4070f4;
@@ -1278,7 +1283,7 @@ h1:before {
     width: 0;
     position: absolute;
     top: 28px;
-    left: 400px;
+    left: 499px;
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
@@ -1286,7 +1291,7 @@ h1:before {
     right: 0px;
   }
   .animatedText .image {
-    width: 83%;
+    width: 60%;
     height: 99%;
     border: 0px solid #4070f4;
     box-shadow: 0px 5px 10px 0px #4070f4;
@@ -1327,4 +1332,58 @@ h1:before {
     left: 30px;
     top: -90px;
   }
+}
+
+/* Gallery  */
+h1 {
+  color: coral;
+}
+.grid-container {
+  columns: 5 200px;
+  column-gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  div {
+    width: 150px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px black;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+    &:hover img {
+      filter: grayscale(0);
+    }
+    &:hover {
+      border-color: coral;
+    }
+    img {
+      width: 100%;
+      filter: grayscale(100%);
+      border-radius: 5px;
+      transition: all 0.25s ease-in-out;
+    }
+    p {
+      margin: 5px 0;
+      padding: 0;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+}
+input::placeholder {
+  position: relative;
+  left: 5px;
+  font-weight: bold;
+  opacity: 0.5;
+  color: red;
+}
+textarea::placeholder {
+  position: relative;
+  left: 5px;
+  font-weight: bold;
+  opacity: 0.5;
+  color: red;
 }
