@@ -7,15 +7,64 @@ import aquaticImg1 from "../assets/images/Aquatic Express Shipping 1.png";
 import aquaticImg2 from "../assets/images/Aquatic Express Shipping 2.png";
 import psusa from "../assets/images/Servics-usa.png";
 import bookluxury from "../assets/images/Apart-luxury.jpg";
+import ieltsAiExpert from "../assets/images/IELTS_AI_Expert_1.png";
+import ieltsAiExpertHover from "../assets/images/IELTS_AI_Expert_2.png";
+import nivessa from "../assets/images/nivessa_1.png";
+import nivessaHover from "../assets/images/nivessa_2.png";
+import way2trip from "../assets/images/WAY2TRIP_1.png";
+import way2tripHover from "../assets/images/WAY2TRIP_2.png";
 
 const projectItems = [
   {
-    id: 1,
-    title: "Mercurysole",
-    year: "2022 - 2023",
+    id: 7,
+    title: "IELTS AI Expert",
+    year: "2025 - 2026",
     status: "Link",
+    statusClass: styles.projectDraft,
+    link: "https://ieltsaiexpert.com/",
+    shortDesc: "AI-powered IELTS test preparation tool for students.",
+    longDesc:
+      "IELTS_AI_Expert is an AI-powered learning tool that helps students prepare for the IELTS test with guided practice, feedback, and personalized preparation support.",
+    image: ieltsAiExpert,
+    hoverImage: ieltsAiExpertHover,
+    technologies: ["React", "AI", "Education"],
+  },
+  {
+    id: 8,
+    title: "Nivessa",
+    year: "2025 - 2026",
+    status: "Link",
+    statusClass: styles.projectDraft,
+    link: "https://nivessa.com/",
+    shortDesc:
+      "A music and collectibles store for vinyl, CDs, movies, and more.",
+    longDesc:
+      "Nivessa lets visitors explore one of the largest collections of new and used vinyl, CDs, movies, and collectibles in Los Angeles, available at Hollywood Blvd and Mid-City stores or shipped anywhere.",
+    image: nivessa,
+    hoverImage: nivessaHover,
+    technologies: ["React", "E-commerce", "Responsive"],
+  },
+  {
+    id: 9,
+    title: "WAY2TRIP",
+    year: "2025 - 2026",
+    status: "Link",
+    statusClass: styles.projectDraft,
+    link: "#",
+    shortDesc: "Trip planning website for discovering and organizing travel.",
+    longDesc:
+      "WAY2TRIP is a travel website designed to help users discover destinations and plan their trips through a clear, engaging browsing experience.",
+    image: way2trip,
+    hoverImage: way2tripHover,
+    technologies: ["React", "Travel", "UI/UX"],
+  },
+  {
+    id: 1,
+    title: "Almuhasba",
+    year: "2022 - 2023",
+    status: "",
     statusClass: styles.projectLive,
-    link: "https://mercurysols.org/",
+    link: "#",
     shortDesc: "Backend company website built with MERN stack.",
     longDesc:
       "This project was developed as a backend system for a company website. It includes user management, authentication, and service tracking built with Node.js, Express.js, and MongoDB.",
@@ -89,6 +138,7 @@ const projectItems = [
     image: bookluxury,
     technologies: ["React", "CSS", "Responsive"],
   },
+  
 ];
 
 function Projects() {

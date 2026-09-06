@@ -4,52 +4,22 @@ import styles from '../style/mystyle.module.css';
 
 const allTestimonials = [
   {
-    id: 1,
-    name: 'Mr. Imarn__',
-    role: 'Client',
-    text: 'I am thrilled to write a testimonial for Azam Ali and their outstanding web development services. I had the pleasure of working with Azam Ali on a recent project, and I cannot express enough gratitude for the incredible work they delivered.',
+    id: 9,
+    name: 'Upwork Client',
+    role: 'Upwork Client | 5.0/5',
+    text: 'Azam did a great job fixing the mobile responsiveness issues on our Next.js website. He delivered quickly, communicated well, and everything worked as expected. Highly recommended!',
   },
   {
-    id: 2,
-    name: 'SKELP __',
-    role: 'Client',
-    text: 'I am delighted to provide a glowing testimonial for the exceptional web development skills of Azam Ali. Working with Azam Ali has been an absolute pleasure, and I cannot speak highly enough of their talent and professionalism.',
+    id: 10,
+    name: 'Upwork Client',
+    role: 'Upwork Client | 5.0/5',
+    text: 'Azam delivered excellent work and completed the project on time. Communication was smooth, and he was professional throughout the project. He understood the requirements well and implemented everything correctly. I would definitely recommend him and would be happy to work with him again in the future.',
   },
   {
-    id: 3,
-    name: 'Rayan Khan',
-    role: 'Startup Founder',
-    text: 'Azam built our entire MVP in just 3 weeks. The code quality was impressive and the architecture was scalable from day one. Highly recommend for any full-stack needs.',
-  },
-  {
-    id: 4,
-    name: 'Fatima Noor',
-    role: 'Product Manager',
-    text: 'Working with Azam was a seamless experience. He understood our requirements quickly and delivered a polished product ahead of schedule. Will definitely work together again.',
-  },
-  {
-    id: 5,
-    name: 'Usman Tariq',
-    role: 'Tech Lead',
-    text: 'Azam has strong command over the MERN stack. He contributed to our codebase with clean, well-structured code. His problem-solving skills are top-notch.',
-  },
-  {
-    id: 6,
-    name: 'Ayesha Malik',
-    role: 'Designer',
-    text: 'Azam bridges the gap between design and development perfectly. He implemented my Figma designs pixel-perfectly with smooth animations and responsive layouts.',
-  },
-  {
-    id: 7,
-    name: 'Hassan Raza',
-    role: 'CEO, TechVentures',
-    text: 'We hired Azam for a complex fintech project and he exceeded expectations. His knowledge of secure API integrations and database design saved us weeks of development time.',
-  },
-  {
-    id: 8,
-    name: 'Zainab Ali',
-    role: 'Freelance Client',
-    text: 'Azam is incredibly professional and communicative. He kept me updated throughout the project and delivered exactly what I envisioned. Very happy with the results!',
+    id: 11,
+    name: 'Upwork Client',
+    role: 'Quotation Platform Client | 5.0/5',
+    text: 'I had a great experience working with Azam. He is highly skilled, dedicated, and professional in his approach. Throughout the project, he maintained clear communication, delivered quality work on time, and handled challenges efficiently. What stood out the most was his willingness to go the extra mile and his problem-solving abilities. Working with him felt like collaborating with a friend and a brother. I highly recommend him to anyone looking for a reliable and talented developer. Looking forward to working together again in the future!',
   },
 ];
 

@@ -8,19 +8,10 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footerGrid}>
         <div className={styles.footerBrand}>
-          <h5 className="d-flex align-items-center gap-2" style={{ fontSize: '1.4rem', margin: 0 }}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style={{ filter: 'drop-shadow(0 0 6px #3FFF00)' }}>
-              <circle cx="12" cy="12" r="3" fill="#3FFF00" />
-              <ellipse cx="12" cy="12" rx="10" ry="4" stroke="#3FFF00" strokeWidth="0.8" fill="none" opacity="0.4" transform="rotate(0 12 12)" />
-              <ellipse cx="12" cy="12" rx="10" ry="4" stroke="#00D4FF" strokeWidth="0.8" fill="none" opacity="0.4" transform="rotate(60 12 12)" />
-              <ellipse cx="12" cy="12" rx="10" ry="4" stroke="#3FFF00" strokeWidth="0.8" fill="none" opacity="0.4" transform="rotate(120 12 12)" />
-            </svg>
-            <span style={{ color: '#3FFF00' }}>{'{'}</span>{' '}
-            <span style={{ color: '#fff' }}>Azam Ali</span>{' '}
-            <span style={{ color: '#3FFF00' }}>{'}'}</span>
-          </h5>
+          <a href="#home" className={styles.footerWordmark}>AZAM <span>ALI</span></a>
+          <span className={styles.footerRole}>Full-stack developer</span>
           <p className={styles.footerTagline}>
-            Full-Stack MERN Developer crafting modern, scalable web applications.
+            Building reliable digital products with thoughtful interfaces and solid engineering.
           </p>
         </div>
 
@@ -51,6 +42,7 @@ function Footer() {
 
         <div className={styles.footerContact}>
           <p className={styles.footerHeading}>Get in Touch</p>
+          <p className={styles.footerContactIntro}>Have a project in mind? Let&apos;s make it useful, clear, and built to last.</p>
           <a href="mailto:aazam7246@gmail.com" className={styles.footerEmail}>
             <svg width="16" height="16" fill="#3FFF00" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
             aazam7246@gmail.com

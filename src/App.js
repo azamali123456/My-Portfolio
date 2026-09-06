@@ -13,13 +13,36 @@ import img4 from './assets/images/Saudibank limited.png';
 import img5 from './assets/images/stripePage.png';
 import img6 from './assets/images/Apart-luxury.jpg';
 import img7 from './assets/images/Mercurysolsnew.png';
-import ItsMe from './assets/icons/itsme';
+import ieltsAiExpert from './assets/images/IELTS_AI_Expert_1.png';
+import ieltsAiExpertSecond from './assets/images/IELTS_AI_Expert_2.png';
+import ieltsAiExpertThird from './assets/images/IELTS_AI_Expert.png';
+import nivessa from './assets/images/nivessa_1.png';
+import nivessaSecond from './assets/images/nivessa_2.png';
+import nivessaThird from './assets/images/nivessa_3.png';
+import way2trip from './assets/images/WAY2TRIP_1.png';
+import way2tripSecond from './assets/images/WAY2TRIP_2.png';
+import way2tripThird from './assets/images/WAY2TRIP_3.png';
+import aquaticExpress from './assets/images/Aquatic Express Shipping 1.png';
 import ParticleField from './component/ParticleField';
-import AtomAnimation from './component/AtomAnimation';
 import Testimonials from './component/Testimonials';
 import Footer from './component/Footer';
 
 function App() {
+  const [activeHeroProject, setActiveHeroProject] = useState(0);
+  const heroProjects = [
+    { title: 'IELTS AI Expert', image: ieltsAiExpert },
+    { title: 'Nivessa', image: nivessa },
+    { title: 'WAY2TRIP', image: way2trip },
+    { title: 'Aquatic Express', image: aquaticExpress },
+  ];
+
+  useEffect(() => {
+    const rotation = setInterval(() => {
+      setActiveHeroProject((current) => (current + 1) % heroProjects.length);
+    }, 3500);
+
+    return () => clearInterval(rotation);
+  }, [heroProjects.length]);
 
   const photos = [
     { src: img1, width: 800, height: 600 },
@@ -31,6 +54,14 @@ function App() {
     { src: img5, width: 800, height: 600 },
     { src: img4, width: 600, height: 600 },
     { src: img1, width: 800, height: 600 },
+    { src: ieltsAiExpertSecond, width: 800, height: 600 },
+    { src: ieltsAiExpertThird, width: 800, height: 600 },
+    { src: nivessa, width: 800, height: 600 },
+    { src: nivessaSecond, width: 800, height: 600 },
+    { src: nivessaThird, width: 800, height: 600 },
+    { src: way2trip, width: 800, height: 600 },
+    { src: way2tripSecond, width: 800, height: 600 },
+    { src: way2tripThird, width: 800, height: 600 },
   ];
 
   const goToTop = () => {
@@ -65,16 +96,9 @@ function App() {
           {/* Navbar */}
           <nav className='navbar navbar-expand-lg navbar-light bg-transparent'>
             <a className={`navbar-brand mt-4 ml-4 ${styles.navbarText}`} href='#'>
-              <h5 style={{ fontSize: '30px' }} className='text-white font-weight-bold d-flex align-items-center gap-2'>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ filter: 'drop-shadow(0 0 6px #3FFF00)' }}>
-                  <circle cx="12" cy="12" r="3" fill="#3FFF00" />
-                  <ellipse cx="12" cy="12" rx="10" ry="4" stroke="#3FFF00" strokeWidth="0.8" fill="none" opacity="0.4" transform="rotate(0 12 12)" />
-                  <ellipse cx="12" cy="12" rx="10" ry="4" stroke="#00D4FF" strokeWidth="0.8" fill="none" opacity="0.4" transform="rotate(60 12 12)" />
-                  <ellipse cx="12" cy="12" rx="10" ry="4" stroke="#3FFF00" strokeWidth="0.8" fill="none" opacity="0.4" transform="rotate(120 12 12)" />
-                </svg>
-                <span style={{ color: '#3FFF00' }}>{'{'}</span>{' '}
-                <span className="neon-text" style={{ color: 'white' }}>Azam Ali</span>{' '}
-                <span style={{ color: '#3FFF00' }}>{'}'}</span>
+              <h5 className={styles.navbarWordmark}>
+                <span className={styles.navbarFirstName}>Azam</span>
+                <span className={styles.navbarLastName}>Ali</span>
               </h5>
             </a>
             <button
@@ -91,8 +115,13 @@ function App() {
             </button>
             <div className='collapse navbar-collapse' id='navbarSupportedContent'>
               <div className='col-sm-7'></div>
-              <div className='d-flex align-items-center gap-2 mt-3 mt-lg-0'>
-                <a href='https://www.facebook.com/profile.php?id=100030632889504' target='_blank' rel='noopener noreferrer' className={styles.navSocialIcon}>
+            </div>
+          </nav>
+
+          {/* Hero */}
+          <div className={`row mt-3 ${styles.animatedText}`}>
+          </div>
+          {/*
                   <svg width='18' height='18' fill='#94a3b8' viewBox='0 0 16 16'><path d='M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z'/></svg>
                 </a>
                 <a href='https://instagram.com/azamali7030' target='_blank' rel='noopener noreferrer' className={styles.navSocialIcon}>
@@ -107,6 +136,7 @@ function App() {
               </div>
             </div>
           </nav>
+          */}
 
           {/* Hero */}
           <div className={`row mt-3 ${styles.animatedText}`}>
@@ -117,7 +147,7 @@ function App() {
               </ul>
               <div className={`text-white ${styles.staticText}`}>Developer</div>
               <h4 className={`${styles.topDivText} mt-3`} style={{ color: '#94a3b8' }}>
-                A passionate Frontend + Backend developer from Pakistan, Punjab, RYK.
+                I build fast, scalable web experiences that turn ambitious ideas into real products.
               </h4>
               <div className={`${styles.navbarButton} mt-3`} style={{ marginLeft: '180px', display: 'inline-flex', width: '130px', justifyContent: 'center' }} onClick={openCertificate}>
                 Certificate
@@ -125,10 +155,21 @@ function App() {
 
             </div>
             <div className='col-sm-5'>
-              <div className='hero-atom-wrapper' style={{ position: 'relative', top: '80px' }}>
-                <AtomAnimation />
+              <div className={styles.heroProjectShowcase} aria-label="Featured projects">
+                {heroProjects.map((project, index) => {
+                  const position = (index - activeHeroProject + heroProjects.length) % heroProjects.length;
+
+                  return (
+                    <div
+                      key={project.title}
+                      className={`${styles.heroProjectCard} ${styles[`heroProjectCard${position}`]}`}
+                    >
+                      <img src={project.image} alt={project.title} />
+                      <span>{project.title}</span>
+                    </div>
+                  );
+                })}
               </div>
-              <ItsMe />
             </div>
           </div>
 
@@ -153,7 +194,7 @@ function App() {
                       <h3 className={styles.timelineCompany}>Mercurysole</h3>
                       <p className={styles.timelineRole}>MERN Stack Developer</p>
                     </div>
-                    <span className={styles.timelineDate}>2022 – 2024</span>
+                    <span className={styles.timelineDate}>2022 – 2025</span>
                   </div>
                   <p className={styles.timelineText}>Built dynamic web applications, optimized backend architecture, and improved user engagement with scalable MERN solutions.</p>
                   <div className={styles.timelineTags}>
@@ -177,7 +218,7 @@ function App() {
                       <h3 className={styles.timelineCompany}>G-Teach Solution</h3>
                       <p className={styles.timelineRole}>MERN Stack Developer</p>
                     </div>
-                    <span className={styles.timelineDate}>2024 – Present</span>
+                    <span className={styles.timelineDate}>2025 – Present</span>
                   </div>
                   <p className={styles.timelineText}>Contributing to scalable and high-performance web applications while collaborating with a high-performing team to deliver modern business solutions.</p>
                   <div className={styles.timelineTags}>

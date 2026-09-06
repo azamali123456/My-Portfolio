@@ -1,44 +1,35 @@
 import React from 'react';
 import styles from '../style/mystyle.module.css';
 
-const rows = [
-  { images: [0, 1, 2], direction: 'ltr' },
-  { images: [3, 4, 5], direction: 'rtl' },
-  { images: [6, 7, 8], direction: 'ltr' },
-];
-
 function ProjectAlbum({ photos }) {
+  const rowSize = Math.ceil(photos.length / 3);
+  const rows = Array.from({ length: 3 }, (_, rowIndex) =>
+    photos.slice(rowIndex * rowSize, (rowIndex + 1) * rowSize)
+  );
+
   return (
     <div className={styles.albumWrap}>
-      {rows.map((row, ri) => (
-        <div key={ri} className={styles.albumTrackWrap}>
-          <div
-            className={`${styles.albumTrack} ${row.direction === 'rtl' ? styles.albumTrackRtl : ''}`}
-          >
-            <div className={styles.albumTrackInner}>
-              {row.images.map((pi, i) => (
-                <div key={i} className={styles.albumItem}>
-                  <div className={styles.albumItemInner}>
-                    <img src={photos[pi].src} alt={`Project ${pi + 1}`} className={styles.albumImg} />
-                    <div className={styles.albumOverlay}>
-                      <span className={styles.albumOverlayIcon}>+</span>
+      {rows.map((row, rowIndex) => (
+        <div key={rowIndex} className={styles.albumTrackWrap}>
+          <div className={`${styles.albumTrack} ${rowIndex % 2 === 1 ? styles.albumTrackRtl : ''}`}>
+            {[row, row].map((photoRow, copyIndex) => (
+              <div key={copyIndex} className={styles.albumTrackInner}>
+                {photoRow.map((photo, photoIndex) => (
+                  <div key={photoIndex} className={styles.albumItem}>
+                    <div className={styles.albumItemInner}>
+                      <img
+                        src={photo.src}
+                        alt={`Project ${rowIndex * rowSize + photoIndex + 1}`}
+                        className={styles.albumImg}
+                      />
+                      <div className={styles.albumOverlay}>
+                        <span className={styles.albumOverlayIcon}>+</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
-            <div className={styles.albumTrackInner}>
-              {row.images.map((pi, i) => (
-                <div key={i} className={styles.albumItem}>
-                  <div className={styles.albumItemInner}>
-                    <img src={photos[pi].src} alt={`Project ${pi + 1}`} className={styles.albumImg} />
-                    <div className={styles.albumOverlay}>
-                      <span className={styles.albumOverlayIcon}>+</span>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
       ))}

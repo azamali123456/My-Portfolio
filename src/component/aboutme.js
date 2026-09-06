@@ -1,38 +1,56 @@
 import React from "react";
 import styles from "../style/mystyle.module.css";
+import me from "../assets/images/profile-image-2.jpeg";
 
 function Aboutme() {
   return (
-    <div className="container-fluid" style={{ background: 'var(--cyber-bg)' }}>
-      <div className="row mt-5">
-        <div className="col-sm-2"></div>
-        <div className="col-sm-8 mt-5 d-flex p-5">
-          <h5 className={`${styles.aboutMeHead}`}>
-            <span className="text-white mt-5">
-              <strong>About Me</strong>
-            </span>
-            <div className="d-flex">
-              <h6 className="text-white mt-4 mb-4 w-75">
-                I'm a Full-Stack MERN Developer with 5+ years of professional experience helping startups, agencies, and businesses build modern, scalable web applications. My expertise includes React.js, Next.js, Node.js, Express.js, MongoDB, MySQL, TypeScript, REST APIs, and Tailwind CSS. I have developed CRM systems, SaaS platforms, business management tools, dashboards, fintech solutions, and custom web applications for international clients. I focus on clean architecture, performance optimization, responsive UI, API integration, and delivering production-ready applications. Whether you need a complete web application, frontend development, backend APIs, or long-term development support, I'm committed to delivering reliable, maintainable, and high-quality solutions that exceed expectations.
-              </h6>
-              <div className={`${styles.aboutMeIconDiv}`}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="80"
-                  height="80"
-                  fill="white"
-                  className="bi bi-file-person-fill m-2 stretched-link"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z" />
-                </svg>
+    <section className="container-fluid" style={{ background: 'var(--cyber-bg)' }}>
+      <div className={`${styles.aboutMeSection} container my-5 p-4 p-md-5`}>
+        <div className="row align-items-center no-gutters">
+          <div className="col-lg-4 mb-5 mb-lg-0 pr-lg-5">
+            <div className={styles.aboutMeProfile}>
+              <div className={styles.aboutMeImage}>
+                <img src={me} alt="Azam Ali" className="img-fluid w-100" />
+              </div>
+             
+            </div>
+          </div>
+
+          <div className="col-lg-8 pl-lg-4">
+            <div className={styles.aboutMeKicker}>About me</div>
+            <h2 className={styles.aboutMeTitle}>I build digital products that make complex work feel simple.</h2>
+            <p className={styles.aboutMeLead}>
+              I&apos;m Azam Ali, a full-stack developer focused on dependable web experiences for ambitious teams.
+            </p>
+            <p className={styles.aboutMeBody}>
+              With 5+ years across React, Next.js, Node.js, and MongoDB, I turn product ideas into responsive, production-ready applications. I care about clear architecture, thoughtful interfaces, and the small details that make software easier to use.
+            </p>
+
+            <div className={styles.aboutMeSkills}>
+              <span>Product-minded development</span>
+              <span>API &amp; system design</span>
+              <span>Responsive UI</span>
+              <span>Long-term support</span>
+            </div>
+
+            <div className={styles.aboutMeStats}>
+              <div className={styles.aboutMeStat}>
+                <strong>5+</strong>
+                <span>Years building</span>
+              </div>
+              <div className={styles.aboutMeStat}>
+                <strong>MERN</strong>
+                <span>Core stack</span>
+              </div>
+              <div className={styles.aboutMeStat}>
+                <strong>Global</strong>
+                <span>Client work</span>
               </div>
             </div>
-          </h5>
+          </div>
         </div>
-        <div className="col-sm-2"></div>
       </div>
-    </div>
+    </section>
   );
 }
 
