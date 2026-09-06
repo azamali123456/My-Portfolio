@@ -1,12 +1,21 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.763196a2.css",
-    "main.js": "/My-Portfolio/static/js/main.5d13a118.js",
+    "main.css": "/My-Portfolio/static/css/main.e86524c5.css",
+    "main.js": "/My-Portfolio/static/js/main.f331ad57.js",
     "static/js/453.8f31a25c.chunk.js": "/My-Portfolio/static/js/453.8f31a25c.chunk.js",
+    "static/media/profile-image-2.jpeg": "/My-Portfolio/static/media/profile-image-2.e40330f1a050aab6f3e5.jpeg",
+    "static/media/nivessa_2.png": "/My-Portfolio/static/media/nivessa_2.807cfe80eb85ef342bb3.png",
+    "static/media/nivessa_1.png": "/My-Portfolio/static/media/nivessa_1.7eeaf7cf685c9bd37176.png",
+    "static/media/nivessa_3.png": "/My-Portfolio/static/media/nivessa_3.d5004a6a8b40408763c6.png",
+    "static/media/WAY2TRIP_1.png": "/My-Portfolio/static/media/WAY2TRIP_1.6b82585a0c3fe9354416.png",
+    "static/media/WAY2TRIP_2.png": "/My-Portfolio/static/media/WAY2TRIP_2.9a47da7b73c77c96daf5.png",
     "static/media/me1.png": "/My-Portfolio/static/media/me1.1a3389b9dde56f48001f.png",
+    "static/media/IELTS_AI_Expert.png": "/My-Portfolio/static/media/IELTS_AI_Expert.f00cc1a6cc4c410087f2.png",
     "static/media/Aquatic Express Shipping 1.png": "/My-Portfolio/static/media/Aquatic Express Shipping 1.4203bba5166baa322a09.png",
     "static/media/azam.js": "/My-Portfolio/static/media/azam.f33f414da0c39d4ecf11.js",
-    "static/media/profile-image-2-removebg-preview.png": "/My-Portfolio/static/media/profile-image-2-removebg-preview.bb2ca61734b102d91bf8.png",
+    "static/media/WAY2TRIP_3.png": "/My-Portfolio/static/media/WAY2TRIP_3.6631e9877a7954a8ff9b.png",
+    "static/media/IELTS_AI_Expert_1.png": "/My-Portfolio/static/media/IELTS_AI_Expert_1.254391f915da6f3d0256.png",
+    "static/media/IELTS_AI_Expert_2.png": "/My-Portfolio/static/media/IELTS_AI_Expert_2.64a8acbc9174d8c67192.png",
     "static/media/quickbook.png": "/My-Portfolio/static/media/quickbook.15411766dbba64c9f577.png",
     "static/media/FYP.png": "/My-Portfolio/static/media/FYP.2e6d2f6cac8c11e0a39f.png",
     "static/media/Almuhasba 1.png": "/My-Portfolio/static/media/Almuhasba 1.d67f37da2eb463871eca.png",
@@ -29,12 +38,12 @@
     "static/media/oath.png": "/My-Portfolio/static/media/oath.4f10cd74f296a51770bf.png",
     "static/media/emailjs.avif": "/My-Portfolio/static/media/emailjs.7ff77f502a07b23fd7d2.avif",
     "index.html": "/My-Portfolio/index.html",
-    "main.763196a2.css.map": "/My-Portfolio/static/css/main.763196a2.css.map",
-    "main.5d13a118.js.map": "/My-Portfolio/static/js/main.5d13a118.js.map",
+    "main.e86524c5.css.map": "/My-Portfolio/static/css/main.e86524c5.css.map",
+    "main.f331ad57.js.map": "/My-Portfolio/static/js/main.f331ad57.js.map",
     "453.8f31a25c.chunk.js.map": "/My-Portfolio/static/js/453.8f31a25c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.763196a2.css",
-    "static/js/main.5d13a118.js"
+    "static/css/main.e86524c5.css",
+    "static/js/main.f331ad57.js"
   ]
 }
